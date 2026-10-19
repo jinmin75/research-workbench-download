@@ -2,6 +2,10 @@
 
 [**학생용 통합 파일 다운로드 (0.10.0)**](https://github.com/jinmin75/research-workbench-download/releases/latest/download/research-workbench-student-0.10.0.zip)
 
+[**상세 사용법 · 활용법 바로 읽기**](USER-GUIDE.md)
+
+설치·계정 연결부터 연구 진행, AI 제안 반영, 정량·질적·혼합연구 활용과 저장·복구까지 안내합니다. 다운로드 전에도 읽을 수 있습니다.
+
 ## 시작 방법
 
 1. 위 링크에서 학생용 통합 ZIP 한 개를 받습니다.
