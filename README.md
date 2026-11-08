@@ -1,6 +1,6 @@
 # 연구설계 작업실 — 학생용 다운로드
 
-[**학생용 통합 파일 다운로드 (0.10.0)**](https://github.com/jinmin75/research-workbench-download/releases/latest/download/research-workbench-student-0.10.0.zip)
+[**학생용 통합 파일 다운로드 (0.11.0)**](https://github.com/jinmin75/research-workbench-download/releases/download/v0.11.0/research-workbench-student-0.11.0.zip)
 
 [**상세 사용법 · 활용법 바로 읽기**](USER-GUIDE.md)
 
@@ -14,6 +14,16 @@
 4. 필요한 도구 준비가 끝나면 브라우저에서 연구를 시작합니다.
 
 앱·개인 AI 연결기·자동 준비·상세 사용서가 ZIP 하나에 모두 들어 있습니다. 상세한 사용법은 압축을 푼 폴더의 `상세한 사용법 및 활용법.md`를 참고하십시오.
+
+## 이번 판본의 변화
+
+선택하거나 채택한 접근법의 **결과 예시**에서 입력 표·결과 표·그림과 읽는 법을 확인할 수 있습니다. 전체 393개 방법을 탐색하며, 연구 조건과 여러 접근법을 함께 적용할 때의 역할·자료 연결·불일치도 살펴봅니다. 합성 자료의 계산 예시 4개와 설명용 구성 389개를 구분합니다. 자신의 연구 결과나 방법 적합성 검증으로 사용하지 마세요.
+
+GPT/Codex·Claude 구독 계정 연결과 Gemini API 키 입력을 유지합니다. 필요한 도구는 첫 실행에 준비하며 인터넷이 필요합니다. 본인 계정의 권한·한도·비용 조건이 적용됩니다. [자동 준비](AUTO-SETUP.md) · [AI 계정 연결과 사용법](USER-GUIDE.md) · [검사 범위](RELEASE-VERIFICATION.md)
+
+## 기존 사용자가 갱신할 때
+
+이전 앱에서 JSON 백업을 받은 뒤 `Stop.cmd`로 종료하세요. 새 ZIP을 **새 폴더**에 풀고 실행한 뒤 백업을 가져옵니다. 제목·판단·근거 기록을 확인할 때까지 이전 폴더와 백업을 보관하세요. 기존 `projects/`를 새 프로그램 파일로 덮어쓰지 마세요.
 
 ## 주의
 
