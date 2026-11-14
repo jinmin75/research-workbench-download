@@ -1,6 +1,6 @@
 # 필요한 도구 자동 준비
 
-Windows 배포본 v0.12.0과 개인 연결기 v1.2.0은 시작할 때 필요한 도구를 확인합니다. 학생은 통합 ZIP 한 개를 일반 폴더에 풀고 `시작.cmd`를 실행하면 됩니다. `Start.cmd`도 같은 기능입니다. 별도의 연결기 ZIP이나 체크섬 파일을 받을 필요가 없습니다. 공유 연구 웹앱의 개인 연결기만 사용하는 경우에는 `Start-Connector.cmd`를 실행합니다.
+Windows 배포본 v0.12.1과 개인 연결기 v1.2.0은 시작할 때 필요한 도구를 확인합니다. 학생은 통합 ZIP 한 개를 일반 폴더에 풀고 `시작.cmd`를 실행하면 됩니다. `Start.cmd`도 같은 기능입니다. 별도의 연결기 ZIP이나 체크섬 파일을 받을 필요가 없습니다. 공유 연구 웹앱의 개인 연결기만 사용하는 경우에는 `Start-Connector.cmd`를 실행합니다.
 
 ## 설치 범위
 
@@ -51,4 +51,4 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Setup.ps1 -Offline
 - [Claude Code 설치 문서](https://code.claude.com/docs/en/setup#install-with-npm), [2.1.303 패키지 등록부](https://registry.npmjs.org/@anthropic-ai/claude-code/2.1.303): npm은 네이티브 바이너리를 설치하며 Node 22 이상과 선택 의존성 설치가 필요합니다. 네이티브 Windows는 Git Bash·WSL·관리자 권한을 필수로 요구하지 않습니다.
 - [npm 설치 폴더 규칙](https://docs.npmjs.com/cli/v11/configuring-npm/folders/): 전용 prefix를 사용해 기존 전역 패키지와 분리합니다.
 
-현재 검사의 통과·실패·미실시와 실제 학생 PC 검증 범위는 [배포 검사](RELEASE-VERIFICATION.md)에 따릅니다. 실제 연구 진행은 [상세한 사용법 및 활용법](USER-GUIDE.md)을 참고하세요.
+현재 검사의 통과·실패·미실시와 실제 학생 PC 검증 범위는 [배포 검사](RELEASE-VERIFICATION.md)에 따릅니다. 실제 연구 진행은 [상세한 사용법 및 활용법](<상세한 사용법 및 활용법.md>)을 참고하세요.
