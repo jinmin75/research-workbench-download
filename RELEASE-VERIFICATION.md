@@ -24,3 +24,5 @@
 - 이름 `research-workbench-student-0.12.3.zip`
 - 크기 2,197,778바이트
 - SHA-256 `fbc293eacb5b102d7883cde9aba515b6b8f7c844d8031a21424d1550428065d3`
+
+GitHub에 게시된 ZIP은 계정 로그인 없이 다시 내려받았다. 크기와 SHA-256이 검사한 파일과 일치했다. 공개 다운로드 파일을 풀어 Windows PowerShell 5.1에서 앱 시작, 393개 탐색, 판단 이력 저장·복원, 연결기 시작·종료를 다시 확인했다.
