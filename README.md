@@ -1,10 +1,10 @@
 # 연구의 길 — 학생용 다운로드
 
-[**학생용 통합 ZIP 다운로드 · 0.12.3**](https://github.com/jinmin75/research-workbench-download/releases/download/v0.12.3/research-workbench-student-0.12.3.zip)
+[**학생용 통합 ZIP 다운로드 · 0.12.4**](https://github.com/jinmin75/research-workbench-download/releases/download/v0.12.4/research-workbench-student-0.12.4.zip)
 
 [**상세 사용법 · 활용법 바로 읽기**](USER-GUIDE.md) · [검사 결과와 파일 해시](RELEASE-VERIFICATION.md)
 
-Claude 설명 요청이 막히던 경우와 Windows 자동 설치에서 잘못 길어진 Codex 임시 경로를 바로잡았습니다. [최초 설치와 실제 응답 검사](RELEASE-VERIFICATION.md)
+Windows에서 GPT/Codex 첫 로그인이 인증 화면 전에 끝나던 문제를 고쳤습니다. GPT/Codex·Claude의 공식 로그인 진행 상태도 세분화했습니다. [검사 결과](RELEASE-VERIFICATION.md)
 
 ## 처음 시작하기
 
@@ -15,9 +15,9 @@ Claude 설명 요청이 막히던 경우와 Windows 자동 설치에서 잘못 �
 
 앱·AI 연결기·자동 준비·상세 사용서가 ZIP 하나에 들어 있습니다. ZIP 안에서 바로 실행하지 마세요. 관리자 권한이나 시스템 PATH 변경은 필요하지 않습니다.
 
-## 0.12.3에서 달라진 점
+## 0.12.4에서 달라진 점
 
-학생 앱은 설명 요청을 확인한 Claude Code 2.1.325를 사용합니다. 필요한 경우 앱 전용 폴더에 설치합니다. Windows 설치가 잠시 사용하는 폴더 이름을 줄여 Codex 실행 파일을 확인하는 단계의 경로 길이 문제를 해결했습니다.
+GPT/Codex와 Claude의 **로그인 시작**을 누르면 공식 창이 열립니다. **연결 상태 확인**에서는 인증 대기, 명령 실패, 창 닫힘을 확인할 수 있습니다. GPT/Codex는 OpenAI 브라우저 탭에서 인증합니다. Claude가 일회용 코드를 보여주면 공식 Claude 로그인 터미널에 입력하세요.
 
 ## 연결 상태와 오류 안내
 
