@@ -1,11 +1,11 @@
 # 필요한 도구 자동 준비
 
-0.12.2 Windows 배포본과 개인 연결기 v1.2.0은 시작할 때 필요한 도구를 확인합니다. 학생은 통합 ZIP 한 개를 일반 폴더에 풀고 `시작.cmd`를 실행하면 됩니다. `Start.cmd`도 같은 기능입니다. 별도의 연결기 ZIP이나 체크섬 파일을 받을 필요가 없습니다. 공유 연구 웹앱의 개인 연결기만 사용하는 경우에는 `Start-Connector.cmd`를 실행합니다.
+0.12.3 Windows 배포본과 개인 연결기 v1.2.0은 시작할 때 필요한 도구를 확인합니다. 학생은 통합 ZIP 한 개를 일반 폴더에 풀고 `시작.cmd`를 실행하면 됩니다. `Start.cmd`도 같은 기능입니다. 별도의 연결기 ZIP이나 체크섬 파일을 받을 필요가 없습니다. 공유 연구 웹앱의 개인 연결기만 사용하는 경우에는 `Start-Connector.cmd`를 실행합니다.
 
 ## 설치 범위
 
 - 앱을 실행할 Node.js 22 이상을 먼저 찾습니다. 없거나 사용할 수 없으면 공식 Node.js 24.22.0 ZIP을 내려받습니다.
-- GPT 구독 연결에 사용할 Codex와 Claude 구독 연결에 사용할 Claude Code를 찾습니다. 없는 도구는 공식 고정 npm 패키지로 준비합니다.
+- GPT 구독 연결에 사용할 Codex와 Claude 구독 연결에 사용할 Claude Code를 찾습니다. 도구가 없으면 공식 npm 패키지로 준비합니다. Claude Code는 앱에서 설명 요청을 확인한 2.1.325를 사용합니다. PC에 다른 버전이 있으면 기존 설치를 건드리지 않고 학생 앱 전용 폴더에 준비합니다.
 - Gemini는 API 키 방식입니다. Gemini CLI는 설치하지 않습니다.
 
 기본 저장 위치는 `%LOCALAPPDATA%\ResearchWorkbench\tools`입니다. 관리자 권한을 요청하거나 시스템 PATH를 수정하지 않습니다. 현재 시작 과정과 자식 프로세스에만 실행 경로를 전달합니다. 기존 프로젝트와 공식 도구의 계정 인증 파일을 설치 파일에 복사하지 않습니다.
@@ -40,7 +40,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Setup.ps1 -Offline
 
 이 검사는 고정 배포 바이트의 무결성과 실행 여부를 확인합니다. 외부 도구의 전체 보안성·공급망·향후 호환성을 보증하지 않습니다. 기존 설치를 재사용할 때는 그 도구의 업데이트 정책이 적용됩니다. 연구 원문이나 인증 파일은 공개 ZIP에 포함하지 않습니다.
 
-고정판은 Node 24.22.0, Codex 0.163.0, Claude Code 2.1.303입니다. 버전 변경은 공식 근거 확인과 회귀 검사 뒤 새 배포판에서 반영합니다. 배포 후에도 제공자 변경에 따른 유지보수는 필요합니다.
+고정판은 Node 24.22.0, Codex 0.163.0, Claude Code 2.1.325입니다. 버전 변경은 공식 근거 확인과 회귀 검사 뒤 새 배포판에서 반영합니다. 배포 후에도 제공자 변경에 따른 유지보수는 필요합니다.
 
 ## 설치 방식의 공식 근거
 
@@ -48,7 +48,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Setup.ps1 -Offline
 
 - [Node 공식 24.22.0 배포 파일과 체크섬](https://nodejs.org/dist/v24.22.0/): x64·ARM64 ZIP을 사용합니다.
 - [Codex 공식 설치 안내](https://github.com/openai/codex/blob/rust-v0.163.0/README.md), [0.163.0 패키지 등록부](https://registry.npmjs.org/@openai/codex/0.163.0): 공식 npm 배포를 사용합니다.
-- [Claude Code 설치 문서](https://code.claude.com/docs/en/setup#install-with-npm), [2.1.303 패키지 등록부](https://registry.npmjs.org/@anthropic-ai/claude-code/2.1.303): npm은 네이티브 바이너리를 설치하며 Node 22 이상과 선택 의존성 설치가 필요합니다. 네이티브 Windows는 Git Bash·WSL·관리자 권한을 필수로 요구하지 않습니다.
+- [Claude Code 설치 문서](https://code.claude.com/docs/en/setup#install-with-npm), [2.1.325 패키지 등록부](https://registry.npmjs.org/@anthropic-ai/claude-code/2.1.325): npm은 네이티브 바이너리를 설치하며 Node 22 이상과 선택 의존성 설치가 필요합니다. 네이티브 Windows는 Git Bash·WSL·관리자 권한을 필수로 요구하지 않습니다.
 - [npm 설치 폴더 규칙](https://docs.npmjs.com/cli/v11/configuring-npm/folders/): 전용 prefix를 사용해 기존 전역 패키지와 분리합니다.
 
-현재 검사의 통과·실패·미실시와 실제 학생 PC 검증 범위는 [배포 검사](RELEASE-VERIFICATION.md)에 따릅니다. 실제 연구 진행은 [상세한 사용법 및 활용법](USER-GUIDE.md)을 참고하세요.
+현재 검사의 통과·실패·미실시와 실제 학생 PC 검증 범위는 [배포 검사](RELEASE-VERIFICATION.md)에 따릅니다. 실제 연구 진행은 [상세한 사용법 및 활용법](<상세한 사용법 및 활용법.md>)을 참고하세요.

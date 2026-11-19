@@ -1,10 +1,10 @@
 # 연구의 길 — 학생용 다운로드
 
-[**학생용 통합 ZIP 다운로드 · 0.12.2**](https://github.com/jinmin75/research-workbench-download/releases/download/v0.12.2/research-workbench-student-0.12.2.zip)
+[**학생용 통합 ZIP 다운로드 · 0.12.3**](https://github.com/jinmin75/research-workbench-download/releases/download/v0.12.3/research-workbench-student-0.12.3.zip)
 
 [**상세 사용법 · 활용법 바로 읽기**](USER-GUIDE.md) · [검사 결과와 파일 해시](RELEASE-VERIFICATION.md)
 
-2026-11-16 추가 확인: 공개 v0.12.2 설치본에서 **GPT/Codex·Claude의 실제 구독 응답 → 제안 선택 적용 → 판단 기록 → 저장·재개**를 각각 통과했습니다. 이 PC의 기존 공식 구독 로그인을 사용한 검사이며, 새 학생 계정·다른 PC의 최초 사용은 별도 확인이 필요합니다. [실제 응답 검사 기록](LIVE-AI-VERIFICATION.md)
+Claude 설명 요청이 막히던 경우와 Windows 자동 설치에서 잘못 길어진 Codex 임시 경로를 바로잡았습니다. [최초 설치와 실제 응답 검사](RELEASE-VERIFICATION.md)
 
 ## 처음 시작하기
 
@@ -15,7 +15,11 @@
 
 앱·AI 연결기·자동 준비·상세 사용서가 ZIP 하나에 들어 있습니다. ZIP 안에서 바로 실행하지 마세요. 관리자 권한이나 시스템 PATH 변경은 필요하지 않습니다.
 
-## 0.12.2에서 달라진 점
+## 0.12.3에서 달라진 점
+
+학생 앱은 설명 요청을 확인한 Claude Code 2.1.325를 사용합니다. 필요한 경우 앱 전용 폴더에 설치합니다. Windows 설치가 잠시 사용하는 폴더 이름을 줄여 Codex 실행 파일을 확인하는 단계의 경로 길이 문제를 해결했습니다.
+
+## 연결 상태와 오류 안내
 
 GPT/Codex·Claude의 **연결 상태를 확인하지 못한 경우**와 **로그인이 필요한 경우**를 구별합니다. 상태를 확인하지 못하면 연구 설명을 보내지 않습니다. Gemini를 포함한 오류별 다음 조치와 **진단 JSON 내려받기**를 추가했습니다. 진단 파일은 연구 내용·계정·키·경로·원시 로그를 포함하지 않으며 자동 전송이나 AI 재요청을 하지 않습니다.
 
@@ -43,7 +47,7 @@ GPT/Codex·Claude의 **연결 상태를 확인하지 못한 경우**와 **로그
 
 공개 ZIP은 개별값·ID·궤적을 제외하므로 완전 재계산할 수 없습니다. 원자료 포함 ZIP은 전체 프로젝트의 텍스트 기록도 담을 수 있으므로 공유 범위를 확인합니다.
 
-Windows x64 개발 PC에서 실제 도구 설치와 최종 ZIP의 실행·저장·계산·재현·진단 다운로드를 검사했습니다. 게시한 ZIP도 인증 없이 다시 내려받아 해시 일치, 빈 폴더 최초 설치, 계산·재현·진단 화면을 확인했습니다. 2026-11-16에는 이 공개 설치본으로 GPT/Codex·Claude의 기존 구독 로그인과 실제 설명 응답·제안 반영·판단 저장을 추가 확인했습니다. 학생의 별도 PC·새 계정 최초 로그인·Gemini 실제 API 응답·전문가 적합성·학습 효과 평가는 미실시입니다. [검사 범위](RELEASE-VERIFICATION.md)
+Windows x64의 빈 폴더에서 통합 ZIP 시작과 Node·Codex·Claude 설치를 확인했습니다. 이 PC의 공식 구독 로그인으로 실제 설명, 제안 선택 적용, 판단 기록 저장·다시 열기를 검사했습니다. 학생 계정의 최초 인증과 별도 PC·학교망에는 별도 확인이 필요합니다. [검사 범위](RELEASE-VERIFICATION.md)
 
 ## 이용 조건
 
